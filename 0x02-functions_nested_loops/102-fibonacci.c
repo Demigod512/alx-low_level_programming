@@ -6,19 +6,19 @@
 int main(void)
 {
 	int i = 0;
-	long k = 1, l = 2;
+	long j = 1, k = 2;
 
 	while (i < 50)
 	{
 	if (i == 0)
-	printf("%ld", k);
+	printf("%ld", j);
 	else if (i == 1)
-	printf(", %ld", l);
+	printf(", %ld", k);
 	else
 	{
-	l += k;
-	k = l - j;
-	printf(", %ld", l);
+	k += j;
+	j = k - j;
+	printf(", %ld", k);
 	}
 	++i;
 	}
